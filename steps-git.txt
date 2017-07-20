@@ -1,26 +1,5 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Gist
-
-    @zjn700
-
-1
-0
-
-    0
-
 zjn700/shopping-list
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Settings
+
 Quick setup — if you’ve done this kind of thing before
 or
 
@@ -40,6 +19,8 @@ git remote add origin https://github.com/zjn700/shopping-list.git
 git push -u origin master
 
 …or import code from another repository
+
+git pull origin master
 
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 ProTip! Use the URL for this page when adding GitHub as a remote.
