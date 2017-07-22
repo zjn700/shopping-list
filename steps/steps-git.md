@@ -1,4 +1,4 @@
-zjn700/shopping-list
+#zjn700/shopping-list
 
 Quick setup — if you’ve done this kind of thing before
 or

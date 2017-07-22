@@ -1,4 +1,4 @@
-// https://stackoverflow.com/questions/37081943/angular2-import-external-js-file-into-component
+// https://stackoverflow.com/questions/37081943/angular2-import-external-js-file-into-componentt
 
 After wasting a lot of time in finding its solution, I've found one. For your convenience I've used the complete code that you can replace your whole file with.
 
