@@ -1,10 +1,10 @@
-1 ==== bash terminal commands:
+#1 ==== bash terminal commands:
 
 ----angular requires a newer version of node > 6.9.0
 ---type the following to find out which version you have:
 node -v
 
----if you need to update, do these steps:
+##---if you need to update, do these steps:
 nvm install node
 node -v
 nvm list
@@ -19,7 +19,7 @@ ng build --prod  (to build dist directory for firebase)
 
 https://github.com/angular/angular-cli/issues/6349
 
-==== firebase deployment ===
+##==== firebase deployment ===
 ng build --prod
 npm install -g firebase-tools
 firebase login --no-localhost
@@ -54,7 +54,7 @@ ng build
 cd ..  (should be in the root folder of the express app (mine was xg-ng)
 npm install nedb --save  
 
-2 ==== editing installed files:
+#2 ==== editing installed files:
 
 ----add to express app.js (replace existing static declaration):
 app.use(express.static(path.join(__dirname, 'ng-xg/dist')));
@@ -63,13 +63,13 @@ app.use(express.static(path.join(__dirname, 'ng-xg/dist')));
 var Datastore = require('nedb'),
     dbn = new Datastore({ filename: path.join(__dirname, '..', '/data/hsi-qnn'), autoload: true });
 
-3 ==== needed for encrypting password and creating the auth token
+#3 ==== needed for encrypting password and creating the auth token
 
 npm install --save bcrypt
 npm install -- save jsonwebtoken
 
 
-3 ==== other steps:
+#4 ==== other steps:
 
 git add .
 git commit -m <msg>
