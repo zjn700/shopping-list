@@ -1,0 +1,38 @@
+ @media print {   
+     aside p {
+        color:white  !important;
+        background-color:#fa3636 !important; 
+       -webkit-print-color-adjust: exact; 
+       
+    }   
+    
+    h2:after {
+      /*content: " (" attr(href) ")";*/
+              content: " - My book"; 
+
+    }
+    
+    @page {
+        
+        content: "My book"; 
+        
+    }
+    /*    @page:left{  */
+      /*@bottom-left { */
+    /*    margin: 10pt 0 30pt 0; */
+    /*    border-top: .25pt solid #666; */
+    /*    content: "My book"; */
+    /*    font-size: 9pt; */
+    /*    color: #333; */
+      /*} */
+    /*}    */
+    /*@page:right{  */
+      /*@bottom-left { */
+    /*    margin: 10pt 0 30pt 0; */
+    /*    border-top: .25pt solid #666; */
+    /*    content: "blah"; */
+    /*    font-size: 9pt; */
+    /*    color: #333; */
+      /*} */
+    /*}   */
+ }

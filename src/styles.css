@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+.hsi-header{
+    position: relative;
+    top: 0;
+    left:0;
+}
+
+.hsi-footer{
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+} 
+aside {
+    display: block;
+    padding:10px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+
+}
+aside p {
+    font-size: 10pt;
+    color:white;
+    padding:10px;
+    background-color:#fa3636 ; 
+} 
+
+
+@media print {
+    /*html, body     {*/
+        /*height: 100%;*/
+    /*    margin: 0px;*/
+    /*}*/
+        
+    .app-menu-box { 
+        display: none;
+    }
+    
+    .hsi-header { 
+      page-break-before: always; 
+      margin-left:-2cm;
+    }
+    
+    .hsi-footer { 
+      position: relative;
+      bottom: -7cm;
+      margin-left:-2cm;
+      /*margin-top: 2cm;*/
+      overflow:visible;
+    }
+    
+    header nav, footer {
+      /*display: none;*/
+    }
+    
+    @page {
+        size: A4 landscape;
+        content: "kljh hihiu";
+        margin: 0cm;
+        margin-top: 1.5cm;
+        margin-bottom: 2.5cm;
+        @bottom-left { margin:0 }
+
+    }
+    
+    .fruit {
+        height: 6cm;
+    }
+    
+    .container{ 
+        height: 100%;
+        margin: 2.5cm;
+    }
+    
+    /*@page:bottom {*/
+    /*    content:"vvv"*/
+        
+    /*}*/
+    /*@page:left { */
+    /*  margin-left: 2.5cm; */
+    /*} */
+ 
+    /*@page:right { */
+    /*  margin-right: 2.5cm; */
+    /*}*/
+    
+    /*@page:first {*/
+    /*    margin: 2.5cm;*/
+    /*}*/
+    
+    
+    /*@page:left{  */
+      /*@bottom-left { */
+    /*    margin: 10pt 0 30pt 0; */
+    /*    border-top: .25pt solid #666; */
+    /*    content: "M y book"; */
+    /*    font-size: 9pt; */
+    /*    color: #333; */
+      /*} */
+    /*}    */
+    /*@page:right{  */
+      /*@bottom-left { */
+    /*    margin: 10pt 0 30pt 0; */
+    /*    border-top: .25pt solid #666; */
+    /*    content: "blah"; */
+    /*    font-size: 9pt; */
+    /*    color: #333; */
+      /*} */
+    /*}       */
+    body {
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.3;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 14pt;
+        margin-top: 25px;
+    }
+    
+
+    aside {
+        display: block;
+        /*float: right;*/
+        padding:.75cm;
+        padding-top: 0;
+        padding-bottom: .25cm;
+
+
+    }
+    
+    /*aside p {*/
+        /*font-size: 10pt;*/
+        /*color:white  !important;*/
+        /*background-color:#fa3636 !important; */
+    /*    padding: 0;*/
+       /*-webkit-print-color-adjust: exact; */
+       
+    /*}    */
+    
+}
