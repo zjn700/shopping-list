@@ -19,13 +19,9 @@
       Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
       Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
     </p>
+  
     
-    <p>
-      Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
-      Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
-    </p>
-    
-        <p>
+     <p>
       Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
       Unfortunately, the “Winery” part of the logo is white and therefore not ideal for printing on light-colored paper. That’s why two versions of the logo are in the source code, one for screen display, one for printing. The latter image has no alt text, otherwise screen readers would repeat reading out “Smashing Winery.”
     </p>
@@ -36,13 +32,25 @@
   </p>
   <div class='page-height' *ngFor="let fruit of fruits">
     <div class="hsi-header">header</div>
-    <hr>
-    <h2 class="fruit">{{fruit}}</h2>
-    <div class="hsi-footer">
-          <hr>
-          <div>footer</div>
- </div>
-
+    <!--<hr>-->
+    <h3><div id='{{fruit}}' class="fruit">{{fruit}}</div></h3>
+    <!--<p>{{loremipsum}}</p>-->
+    <div *ngFor="let item of items; let i = index">
+       <p *ngIf="checkCharacterCount(i)">
+         i-{{i}} - {{fruit}} {{loremipsum}}
+       </p>
+       </div>
+       <div class="hsi-header">- {{i}} header</div>
+         <div *ngFor="let item of items; let j = index">
+         <p *ngIf="checkCharacterCount(j)" >
+           j-{{j}} {{loremipsum}}
+         </p>
+       </div>
+    <!--</div>-->
+    <!--<div class="hsi-footer">-->
+    <!--      <hr>-->
+    <!--      <div>footer</div>-->
+    <!-- </div>-->
   </div>
   
 </div>

@@ -3,20 +3,24 @@
         color:white  !important;
         background-color:#fa3636 !important; 
        -webkit-print-color-adjust: exact; 
-       
     }   
     
     h2:after {
       /*content: " (" attr(href) ")";*/
               content: " - My book"; 
-
     }
+
+    .fruit[id]:after { 
+    	content: " - " attr(id); /* no quotes around attribute name! */
+    	                         /*https://davidwalsh.name/css-content-attr*/
+    }    
     
     @page {
-        
         content: "My book"; 
-        
     }
+ }
+ 
+ 
     /*    @page:left{  */
       /*@bottom-left { */
     /*    margin: 10pt 0 30pt 0; */
@@ -35,4 +39,3 @@
     /*    color: #333; */
       /*} */
     /*}   */
- }
