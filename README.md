@@ -1,5 +1,4 @@
 # shopping-list
-# shopping-list
 ## h2
 ### h3
 #### h4
@@ -48,5 +47,6 @@ See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETE
 | OneDrive | [plugins/onedrive/README.md] [PlOd] |
 | Medium | [plugins/medium/README.md] [PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md] [PlGa] |
+=======
 
 ```
